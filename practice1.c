@@ -4,14 +4,13 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	char c;
-	int i;
+	char a;
 	
-	printf("input number: ");
-	scanf("%c", &c);
+	printf("enter a character: ");
+	scanf("%c", &a);
 	
-	i = c - '0';
-	printf("The input number is %i\n", i); // ASCII 값은 0~9까지 각각 48~57이다.  ASCII값의 차이 이용. 
+	char b = a + 1; // 문자 변수에 1을 더하면 ASCII값이 1커진다. 
+	printf("The next chracter of %c (%i) is %c(%i)", a, a, b, b); // 문자 변수를 숫자(ASCII값)로 표현할 때는 %i 사용. 
 	
 	return 0;
 }
