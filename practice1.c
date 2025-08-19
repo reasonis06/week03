@@ -4,13 +4,13 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	char a;
+	float a;
+	float b;
 	
-	printf("enter a character: ");
-	scanf("%c", &a);
+	printf("enter two integers: ");
+	scanf("%f, %f", &a, &b);
 	
-	char b = a + 1; // 문자 변수에 1을 더하면 ASCII값이 1커진다. 
-	printf("The next chracter of %c (%i) is %c(%i)", a, a, b, b); // 문자 변수를 숫자(ASCII값)로 표현할 때는 %i 사용. 
+	printf("%f / %f = %f", a, b, a/b);
 	
 	return 0;
 }
